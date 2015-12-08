@@ -44,7 +44,7 @@
                 <copy todir="WebRoot/WEB-INF/lib">
                         <fileset dir="dist/war"/>
                 </copy>
-                <war warfile="dist/loginServlet.war"
+                <war warfile="D:/Tomcat/tomcat7/webapps/loginServlet.war"
                         includes="**/*.*"
                         excludes="WEB-INF/classes/**/*.class"
                         webxml="WebContent/WEB-INF/web.xml" 

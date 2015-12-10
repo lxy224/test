@@ -43,7 +43,7 @@
                 <delete file="WebRoot/WEB-INF/lib/javaWeb-web.jar" />        
         </target>
         
-        <target name="all"  depends="prepare, compile, war">
+        <target name="all"  depends="prepare, war">
         </target>
 
 </project>

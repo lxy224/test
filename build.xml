@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<project name="loginServlet" basedir="." default="all">
+<project name="loginServlet" basedir="loginServlet" default="all">
         <path id="classpath">
                 <fileset dir="./WebRoot/WEB-INF/lib">
                         <include name="**/*.jar" />

@@ -31,7 +31,7 @@
                 <delete dir="dist/tmp" />
                 <mkdir dir="dist/tmp" />
                 <delete file="dist/war/javaWeb-web.jar" />
-                <javac srcdir="loginServlet/src" includes="com/acts/web/**/*.*,com/acts/web/**/**/*.*" debug="true" fork="yes" destdir="dist/tmp" classpathref="classpath" encoding="UTF-8" includeantruntime="on"/>
+                <javac srcdir="src" includes="com/acts/web/**/*.*,com/acts/web/**/**/*.*" debug="true" fork="yes" destdir="dist/tmp" classpathref="classpath" encoding="UTF-8" includeantruntime="on"/>
                 <jar destfile="dist/war/javaWeb-web.jar" update="true">
                         <fileset dir="dist/tmp" includes="**/*.*" />
                 </jar>

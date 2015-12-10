@@ -44,7 +44,7 @@
                 <copy todir="WebRoot/WEB-INF/lib">
                         <fileset dir="dist/war"/>
                 </copy>
-                <war warfile="C:/Program Files/agent/var/work/test-component/loginServlet.war"
+                <war warfile="C:/Program Files/ibm-ucd/agent/var/work/Login-component/loginServlet.war"
                         includes="**/*.*"
                         excludes="WEB-INF/classes/**/*.class"
                         webxml="WebContent/WEB-INF/web.xml" 

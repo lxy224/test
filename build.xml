@@ -13,7 +13,7 @@
                 <mkdir dir="dist/war" />            
         </target>
 
-        <target name="compile" > 
+        <target name="compile" >
                 <mkdir dir="dist/tmp"/>
                 <javac 
                         debug="true" 
@@ -25,16 +25,6 @@
                         <fileset dir="src" includes="**/*.xml" excludes="**/*.java"></fileset>                        
                 </copy>
                 
-        </target>
-        
-        <target name="jar-web" description="web jar">
-                <delete dir="dist/tmp" />
-                <mkdir dir="dist/tmp" />
-                <delete file="dist/war/javaWeb-web.jar" />
-                <javac srcdir="src" includes="com/acts/web/**/*.*,com/acts/web/**/**/*.*" debug="true" fork="yes" destdir="dist/tmp" classpathref="classpath" encoding="UTF-8" includeantruntime="on"/>
-                <jar destfile="dist/war/javaWeb-web.jar" update="true">
-                        <fileset dir="dist/tmp" includes="**/*.*" />
-                </jar>
         </target>
         
         <target name="war" description="war loginServlet">
@@ -53,8 +43,7 @@
                 <delete file="WebRoot/WEB-INF/lib/javaWeb-web.jar" />        
         </target>
         
-
-        <target name="all"  depends="prepare, war">
+        <target name="all"  depends="prepare, compile, war">
         </target>
 
 </project>

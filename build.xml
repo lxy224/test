@@ -37,7 +37,7 @@
                 </jar>
         </target>
         
-        <target name="war" description="war loginServlet" depends="jar-web">
+        <target name="war" description="war loginServlet">
                 <delete dir="dist/tmp" />
                 <mkdir dir="dist/tmp" />
                 <delete file="dist/war/loginServlet.war" />
@@ -54,7 +54,7 @@
         </target>
         
 
-        <target name="all"  depends="prepare, jar-web, war">
+        <target name="all"  depends="prepare, war">
         </target>
 
 </project>
